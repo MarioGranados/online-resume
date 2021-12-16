@@ -4,6 +4,7 @@
     --dark-bg: #22223B;
     --navBarColor: #17C3B2;
     --footer: #292F36;
+    --yellow: #FFCB77;
 }
 
 * {
@@ -25,6 +26,9 @@ nav {
     background-color: var(--footer);
     padding: 30px;
     transition: 350ms;
+}
+
+.active a {
     color: #FFCB77;
 }
 
@@ -228,6 +232,9 @@ footer a:hover {
 
     nav {
         position: relative;
+    }
+    nav .nav_items{
+        padding: 0;
     }
 
 }

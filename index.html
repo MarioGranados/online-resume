@@ -204,6 +204,15 @@
     }
 
 
+    function resizeNavBar() {
+        let hamburgerMenuForMobile = window.matchMedia("(max-width: 600px)");
+        if (hamburgerMenuForMobile.matches) {
+            document.getElementById('navbar').classList.add('mobile')
+        } else {
+            document.getElementById('navbar').classList.remove()
+        }
+    }
+    resizeNavBar();
 </script>
 
 </body>
