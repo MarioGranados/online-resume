@@ -23,7 +23,7 @@
             <div class="nav_items"><a href="#">Projects</a></div>
         </div>
         <div class="nav_section">
-            <div class="nav_items"><a href="#">Mario Granados</a></div>
+            <div class="nav_items"><a href="#" onclick="switchToDarkMode()">Mario Granados</a></div>
         </div>
         <div class="nav_section">
             <div class="nav_items"><a href="https://github.com/MarioGranados">Github</a></div>
@@ -33,12 +33,12 @@
 
     </div>
 </nav>
-<span class="material-icons" onclick="openMobileMenu()">&#xe5d2</span>
+<span class="material-icons" onclick="toggleMobileMenu()">&#xe5d2</span>
 <div id="hamburger">
-    <span class="material-icons" id="closeIcon" onclick="openMobileMenu()">&#xe5cd</span>
-        <div class="nav_items">hello</div>
-        <div class="nav_items">hello</div>
-        <div class="nav_items">hello</div>
+    <span class="material-icons" id="closeIcon" onclick="toggleMobileMenu()">&#xe5cd</span>
+        <div class="nav_items"><a href="#" onclick="toggleMobileMenu()">Home</a></div>
+        <div class="nav_items"><a href="#contact" onclick="toggleMobileMenu()">contact</a></div>
+        <div class="nav_items"><a href="#" onclick="toggleMobileMenu()">Projects</a></div>
 </div>
 <main>
     <div class="main_container">
@@ -57,7 +57,7 @@
                     others and solve problems by developing functional, aesthetic user
                     experiences.
                 </p>
-                <button id="darkMode" class="btn" type="button" onclick="switchToDarkMode()">Dark Mode</button>
+                <button class="btn" type="button">Dark Mode</button>
             </div>
         </div>
         <!--This section will be the inverse of the section above-->
@@ -128,7 +128,6 @@
                 <img src="https://blog.greendot.org/wp-content/uploads/sites/13/2021/09/placeholder-image.png" alt="placeholder">
             </div>
         </div>
-    </div>
     </div>
 
 </main>
@@ -230,9 +229,9 @@
         changeBackgroundToggle.classList.toggle('dark-mode');
     }
 
-    function openMobileMenu() {
+    function toggleMobileMenu() {
         let openMenu = document.getElementById('hamburger');
-        openMenu.classList.toggle('hidden')
+        openMenu.classList.toggle('toggleOn')
     }
 
 
