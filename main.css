@@ -22,9 +22,15 @@ nav {
     border-bottom: var(--headers) 1px solid
 }
 
+#hamburger {
+    display: none;
+}
+.material-icons {
+    display: none;
+}
 .active {
     background-color: var(--footer);
-    padding: 30px;
+    padding: 15px;
     transition: 350ms;
 }
 
@@ -230,11 +236,42 @@ footer a:hover {
         margin: auto;
     }
 
-    nav {
+    nav .nav_section {
+        display: none;
+    }
+
+    #hamburger.hidden {
+        display: block;
+        height: 100%;
+        width: 35%;
+        background-color: cadetblue;
+        position: fixed;
+        z-index: 9999;
+        transition: 250ms;
+    }
+    #hamburger{
+        display: none;
+        height: 0;
+        width: 0;
+        position: unset;
+        z-index: 0;
+        transition: 150ms;
+    }
+    .material-icons{
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        display: unset;
+    }
+    #closeIcon {
+        left: 25%;
+    }
+    .nav_items {
         position: relative;
+        top: 35px;
+        left: 10px;
+        margin-top: 10px;
     }
-    nav .nav_items{
-        padding: 0;
-    }
+
 
 }
