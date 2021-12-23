@@ -1,3 +1,11 @@
+:root {
+    --red: #CC2936;
+    --darkBlue: #1F2041;
+    --grey: #343F3E;
+    --lightBlue: #94B0DA;
+    --bg: #DCEDFF;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -28,14 +36,40 @@
         color: blue;
     }
 
+    /*main section here*/
+
     .main_items {
-        margin: 10px 0;
         padding: 25px;
+/*        background-color: var(--bg);*/
+        background-image: linear-gradient(var(--bg), rgba(196, 242, 255, 0.95));
+/*        border: 2px solid var(--lightBlue);*/
     }
 
     .main_items:nth-child(odd) {
-        background-color: black;
+/*        border: 2px solid var(--bg);*/
+        background-image: linear-gradient(var(--darkBlue), rgba(31, 48, 65, 0.88));
+/*        background-color: var(--darkBlue);*/
         color: white;
+    }
+
+    .main_items:nth-child(odd) h3{
+        color: var(--red);
+    }
+
+    .main_items:nth-child(odd) h4 {
+        color: var(--bg);
+        font-weight: bold;
+    }
+
+    /*Bullets on skills section*/
+    .skills_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bullet_columns li{
+        list-style: none;
     }
 
 }
