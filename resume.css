@@ -14,13 +14,12 @@
 
 @media screen and (min-width: 300px) {
 
-    body {
-        text-align: center;
-    }
+
 
     header {
         width: 90%;
         margin: auto;
+        text-align: center;
     }
 
     header h2 {
@@ -32,17 +31,27 @@
         margin: 10px;
     }
 
+    h2 , h3 , h4 {
+        text-align: center;
+    }
+
     h2 {
         color: blue;
+    }
+
+    h3 , h4 {
+        margin: 10px 0;
     }
 
     /*main section here*/
 
     .main_items {
-        padding: 25px;
+        padding: 20px;
 /*        background-color: var(--bg);*/
         background-image: linear-gradient(var(--bg), rgba(196, 242, 255, 0.95));
+        min-height: 30vh;
 /*        border: 2px solid var(--lightBlue);*/
+
     }
 
     .main_items:nth-child(odd) {
@@ -58,18 +67,34 @@
 
     .main_items:nth-child(odd) h4 {
         color: var(--bg);
-        font-weight: bold;
     }
 
+
+
     /*Bullets on skills section*/
+
     .skills_section {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
+    .bullet_columns ul {
+        width: 100%;
+        margin: auto;
+    }
+
     .bullet_columns li{
         list-style: none;
+        margin: 10px 0;
+        text-align: center;
+
+    }
+
+    /* professional experience section */
+
+    .professional_experience_container {
+        margin-top: 20px;
     }
 
 }
